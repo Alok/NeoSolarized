@@ -1,3 +1,41 @@
+" Personal settings
+" ---------------------------------------------------------------------
+"
+" highlight TODOs
+syntax match myTodo "\<\l\{2\}TODO\>"
+syntax match myTodo "\<\l\{2\}README\>"
+syntax match MyGroup /QUESTION\|CHANGEME\|???\|README\|TODO/
+highlight MyGroup guifg=pink
+
+hi def link myTodo Todo
+highlight MyGroup guifg=pink
+
+hi def link myTodo Todo
+syntax match todo "TODO"
+
+highlight TermCursor ctermfg=green guifg=green
+
+highlight! link txtBold Identifier
+highlight! link zshVariableDef Identifier
+highlight! link zshFunction Function
+highlight! link MatchParen DiffText
+
+highlight! link CTagsModule Type
+highlight! link CTagsClass Type
+highlight! link CTagsMethod Identifier
+highlight! link CTagsSingleton Identifier
+
+highlight! link htmlTagName Type
+
+highlight! PreProc gui=bold
+
+highlight! Normal guifg=#77A5B1
+highlight! Constant guifg=#00BCE0
+highlight! Comment guifg=#52737B
+highlight! link htmlLink Include
+highlight! CursorLine cterm=NONE gui=NONE
+highlight! Type gui=bold
+highlight! EasyMotionTarget ctermfg=100 guifg=#4CE660 gui=bold
 " ---------------------------------------------------------------------
 " OPTIONS:
 " ---------------------------------------------------------------------
@@ -842,44 +880,6 @@ augroup END
 
 "}}}
 
-" Personal settings
-" ---------------------------------------------------------------------
-"
-" highlight TODOs
-syntax match myTodo "\<\l\{2\}TODO\>"
-syntax match myTodo "\<\l\{2\}README\>"
-syntax match MyGroup /QUESTION\|CHANGEME\|???\|README\|TODO/
-highlight MyGroup guifg=pink
-
-hi def link myTodo Todo
-highlight MyGroup guifg=pink
-
-hi def link myTodo Todo
-syntax match todo "TODO"
-
-highlight TermCursor ctermfg=green guifg=green
-
-highlight! link txtBold Identifier
-highlight! link zshVariableDef Identifier
-highlight! link zshFunction Function
-highlight! link MatchParen DiffText
-
-highlight! link CTagsModule Type
-highlight! link CTagsClass Type
-highlight! link CTagsMethod Identifier
-highlight! link CTagsSingleton Identifier
-
-highlight! link htmlTagName Type
-
-highlight! PreProc gui=bold
-
-highlight! Normal guifg=#77A5B1
-highlight! Constant guifg=#00BCE0
-highlight! Comment guifg=#52737B
-highlight! link htmlLink Include
-highlight! CursorLine cterm=NONE gui=NONE
-highlight! Type gui=bold
-highlight! EasyMotionTarget ctermfg=100 guifg=#4CE660 gui=bold
 
 highlight! Visual guifg=#FFFFFF gui=bold guibg=#D13A82 ctermfg=207
 
