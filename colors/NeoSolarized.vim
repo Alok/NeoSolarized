@@ -1,19 +1,6 @@
 " Personal settings
 " ---------------------------------------------------------------------
 "
-" highlight TODOs
-syntax match myTodo "\<\l\{2\}TODO\>"
-syntax match myTodo "\<\l\{2\}README\>"
-syntax match MyGroup /QUESTION\|CHANGEME\|???\|README\|TODO/
-highlight MyGroup guifg=pink
-
-hi def link myTodo Todo
-highlight MyGroup guifg=pink
-
-hi def link myTodo Todo
-syntax match todo "TODO"
-
-highlight TermCursor ctermfg=green guifg=green
 
 highlight! link txtBold Identifier
 highlight! link zshVariableDef Identifier
@@ -880,6 +867,18 @@ augroup END
 
 "}}}
 
+" highlight TODOs
+syntax match myTodo "\<\l\{2\}TODO\>"
+syntax match myTodo "\<\l\{2\}README\>"
+syntax match MyGroup /QUESTION\|CHANGEME\|???\|README\|TODO/
+highlight MyGroup guifg=pink
+
+hi def link myTodo Todo
+highlight MyGroup guifg=pink
+
+hi def link myTodo Todo
+syntax match todo "TODO"
+
+highlight TermCursor ctermfg=green guifg=green
 
 highlight! Visual guifg=#FFFFFF gui=bold guibg=#D13A82 ctermfg=207
-
