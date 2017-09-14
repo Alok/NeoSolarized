@@ -826,16 +826,16 @@ execute "highlight! NeomakeNeomakeInfoSign"    . s:fg_green    .s:bg_none   .s:f
 
 " gitgutter highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! GitGutterAdd"              . s:fg_green    .s:bg_none  .s:fmt_none
-exe "hi! GitGutterChange"           . s:fg_yellow   .s:bg_none  .s:fmt_none
-exe "hi! GitGutterDelete"           . s:fg_red      .s:bg_none  .s:fmt_none
-exe "hi! GitGutterChangeDelete"     . s:fg_red      .s:bg_none  .s:fmt_none
+exe "highlight! GitGutterAdd"              . s:fg_green    .s:bg_none  .s:fmt_none
+exe "highlight! GitGutterChange"           . s:fg_yellow   .s:bg_none  .s:fmt_none
+exe "highlight! GitGutterDelete"           . s:fg_red      .s:bg_none  .s:fmt_none
+exe "highlight! GitGutterChangeDelete"     . s:fg_red      .s:bg_none  .s:fmt_none
 " }}}"
 
 " ALE highlighting "{{{
 " ---------------------------------------------------------------------
-exe "hi! ALEErrorSign"          . s:fg_orange   .s:bg_none   .s:fmt_none
-exe "hi! ALEWarningSign"        . s:fg_yellow   .s:bg_none   .s:fmt_none
+exe "highlight! ALEErrorSign"          . s:fg_orange   .s:bg_none   .s:fmt_none
+exe "highlight! ALEWarningSign"        . s:fg_yellow   .s:bg_none   .s:fmt_none
 " }}}"
 
 " NeoVim terminal buffer colours "{{{
@@ -887,12 +887,14 @@ syntax match myTodo "\<\l\{2\}README\>"
 syntax match MyGroup /QUESTION\|CHANGEME\|???\|README\|TODO/
 highlight MyGroup guifg=pink
 
-hi def link myTodo Todo
+highlight def link myTodo Todo
 highlight MyGroup guifg=pink
 
-hi def link myTodo Todo
+highlight def link myTodo Todo
 syntax match todo "TODO"
 
-highlight TermCursor ctermfg=green guifg=green
+highlight! TermCursor ctermfg=green guifg=green
+
+highlight! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 
 highlight! Visual guifg=#FFFFFF gui=bold guibg=#D13A82 ctermfg=207
