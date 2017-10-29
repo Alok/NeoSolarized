@@ -874,7 +874,7 @@ let g:terminal_color_15 = s:gui_base3
 " here. It fires only in cases where vim is transferring from terminal to gui
 " mode (detected with the script scope s:vmode variable). It also allows for
 " other potential terminal customizations that might make gui mode suboptimal.
-"
+
 augroup myColors
     autocmd GUIEnter * if (has('gui_running')) | execute "colorscheme " . g:colors_name | endif
 augroup END
@@ -882,16 +882,7 @@ augroup END
 "}}}
 
 " highlight TODOs
-syntax match myTodo "\<\l\{2\}TODO\>"
-syntax match myTodo "\<\l\{2\}README\>"
-syntax match MyGroup /QUESTION\|CHANGEME\|???\|README\|TODO/
-highlight MyGroup guifg=pink
-
-highlight def link myTodo Todo
-highlight MyGroup guifg=pink
-
-highlight def link myTodo Todo
-syntax match todo "TODO"
+syntax keyword Todo README TODO XXX FIXME CHANGEME QUESTION NOTE
 
 highlight! TermCursor ctermfg=green guifg=green
 
