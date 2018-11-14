@@ -884,6 +884,7 @@ augroup END
 " highlight TODOs
 syntax keyword Todo README TODO XXX FIXME CHANGEME QUESTION NOTE
 
+highlight! link Conceal Comment
 highlight! TermCursor ctermfg=green guifg=green
 
 highlight! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
