@@ -494,8 +494,10 @@ execute "highlight! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:
 execute "highlight! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
 execute "highlight! SpellRare"      .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_cyan
 execute "highlight! SpellLocal"     .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_yellow
-execute "highlight! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_none    .s:fmt_none
-execute "highlight! PmenuSel"       .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:fmt_none
+" execute "highlight! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_none    .s:fmt_none
+" execute "highlight! PmenuSel"       .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:fmt_none
+execute "highlight! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:fmt_revbb
+execute "highlight! PmenuSel"       .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:fmt_revbb
 execute "highlight! PmenuSbar"      .s:fmt_none   .s:fg_base2  .s:bg_base0   .s:fmt_revbb
 execute "highlight! PmenuThumb"     .s:fmt_none   .s:fg_base0  .s:bg_base03  .s:fmt_revbb
 execute "highlight! TabLine"        .s:fmt_undr   .s:fg_base0  .s:bg_base02  .s:sp_base0
