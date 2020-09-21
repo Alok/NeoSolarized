@@ -893,3 +893,10 @@ highlight! TermCursor ctermfg=green guifg=green
 highlight! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 
 highlight! Visual guifg=#FFFFFF gui=bold guibg=#D13A82 ctermfg=207
+" TODO this may need to match the background instead (https://github.com/neoclide/coc.nvim/issues/511).
+" highlight! link CocFloating pandoc
+
+highlight! CocFloating ctermbg=8
+" highlight! link CocPumFloating pandoc
+highlight! CoqtailChecked ctermbg=19 guibg=#245424
+highlight! CoqtailSent ctermbg=90 guibg=Gray
